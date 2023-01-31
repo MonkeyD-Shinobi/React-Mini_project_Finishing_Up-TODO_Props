@@ -25,6 +25,19 @@ class TodoItem extends React.Component {
         />
         <label> {this.props.todo.text} </label>
       </div>
+      // OR WE COULD HAVE USED DECONSTRUCTION
+      //   render() {
+      // const { text, completed } = this.props.todo;
+      // return (
+      //   <div className="todo-item">
+      //     <input
+      //       type="checkbox"
+      //       checked={completed}
+      //       onChange={() =>
+      //         this.props.handleClick(this.props.todo)}
+      //     />
+      //     <label> {text} </label>
+      //   </div>
     );
   }
 }
